@@ -30794,6 +30794,7 @@ const core = __nccwpck_require__(6024);
 const github = __nccwpck_require__(5016);
 
 const main = async () => {
+    console.log("Hi start")
     try {
         /**
          * We need to fetch all the inputs that were provided to our action
