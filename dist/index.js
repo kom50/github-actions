@@ -30804,6 +30804,7 @@ const main = async () => {
         const repo = core.getInput('repo', { required: true });
         const pr_number = core.getInput('pr_number', { required: true });
         const token = core.getInput('token', { required: true });
+        console.log("🚀 ~ main ~ token:", token)
 
         /**
          * Now we need to create an instance of Octokit which will use to call
@@ -30814,6 +30815,7 @@ const main = async () => {
          * https://octokit.github.io/rest.js/v18
          **/
         const octokit = new github.getOctokit(token);
+        console.log("🚀 ~ main ~ octokit:", octokit)
 
         /**
          * We need to fetch the list of files that were changes in the Pull Request
@@ -30848,6 +30850,7 @@ const main = async () => {
             acc.changes += file.changes;
             return acc;
         }, diffData);
+        console.log("🚀 ~ main ~ diffData:", diffData)
 
         /**
          * Loop over all the files changed in the PR and add labels according 
