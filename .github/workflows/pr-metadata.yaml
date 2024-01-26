@@ -14,7 +14,6 @@ jobs:
         run:  |
           ls
           pwd
-
         uses: kom50/github-actions
         with:
           owner: ${{ github.repository_owner }}
