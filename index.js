@@ -2,6 +2,7 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 const main = async () => {
+    console.log("Hi start")
     try {
         /**
          * We need to fetch all the inputs that were provided to our action
