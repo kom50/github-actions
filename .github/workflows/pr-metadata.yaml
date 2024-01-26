@@ -11,8 +11,6 @@ jobs:
     name: Annotates pull request with metadata
     steps:
       - name: Annotate PR
-        run: |
-          echo ${{ secrets.GITHUB_TOKEN }}
         uses: kom50/github-actions@main
         with:
           owner: ${{ github.repository_owner }}
