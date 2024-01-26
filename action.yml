@@ -15,4 +15,6 @@ inputs:
     required: true
 runs:
   using: 'node16'
+  run:  |
+    npm i
   main: 'index.js'
