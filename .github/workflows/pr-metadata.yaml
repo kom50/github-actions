@@ -11,9 +11,6 @@ jobs:
     name: Annotates pull request with metadata
     steps:
       - name: Annotate PR
-        run:  |
-          ls
-          pwd
         uses: kom50/github-actions
         with:
           owner: ${{ github.repository_owner }}
