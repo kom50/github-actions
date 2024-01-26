@@ -17,6 +17,3 @@ jobs:
           repo: ${{ github.event.repository.name }}
           pr_number: ${{ github.event.number }}
           token: ${{ secrets.GITHUB_TOKEN }}
-        # Add a cache-busting string:
-        env:
-          CACHE_BUST: 1
