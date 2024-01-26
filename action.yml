@@ -15,4 +15,4 @@ inputs:
     required: true
 runs:
   using: 'node16'
-  main: 'dict/index.js'
+  main: 'main/dict/index.js'
