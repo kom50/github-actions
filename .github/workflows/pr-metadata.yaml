@@ -13,9 +13,9 @@ jobs:
       - name: Annotate PR
         run: |
           echo ${{ secrets.GITHUB_TOKEN }}
-        # uses: kom50/github-actions@main
-        # with:
-        #   owner: ${{ github.repository_owner }}
-        #   repo: ${{ github.event.repository.name }}
-        #   pr_number: ${{ github.event.number }}
-        #   token: ${{ secrets.GITHUB_TOKEN }}
+        uses: kom50/github-actions@main
+        with:
+          owner: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          pr_number: ${{ github.event.number }}
+          token: ${{ secrets.GITHUB_TOKEN }}
