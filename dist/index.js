@@ -30827,6 +30827,7 @@ const main = async () => {
             repo,
             pull_number: pr_number,
         });
+        console.log("🚀 ~ main ~ changedFiles:", changedFiles)
 
 
         /**
